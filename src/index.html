@@ -1,13 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arctic Notes</title>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">Arctic Notes</a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#landscape" class="nav-link">Landscape</a>
+        <a href="#watch" class="nav-link">Watch</a>
+        <a href="#footer" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="stripe hero">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="label">A small nature page</p>
+        <h1>Life in the Arctic</h1>
+        <p>Cold seas, open ice, and the animals that live there.</p>
+        <a class="button" href="#about">Explore the page →</a>
+      </div>
+      <img src="assets/image.jpg" alt="Polar bear standing on snow">
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="stripe about">
+      <div class="wrap">
+        <p class="label">01 / About</p>
+        <h2>A place shaped by ice</h2>
+        <p class="intro">The Arctic is an ocean surrounded by land. Its seasons affect the animals and people who live there.</p>
+        <div class="columns">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">✳</span>
+            <h3>Sea ice</h3>
+            <p>Sea water freezes in winter and melts back during warmer months.</p>
+            <button type="button" data-topic="ice">Read more →</button>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">◒</span>
+            <h3>Long seasons</h3>
+            <p>Summer brings long days, while winter brings long darkness.</p>
+            <button type="button" data-topic="seasons">Read more →</button>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">≈</span>
+            <h3>Wildlife</h3>
+            <p>Polar bears, seals, birds, and whales all depend on this region.</p>
+            <button type="button" data-topic="wildlife">Read more →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="stripe gallery">
+      <div class="wrap">
+        <p class="label">02 / Gallery</p>
+        <h2>Three Arctic views</h2>
+        <div class="carousel" aria-label="Arctic views carousel" aria-roledescription="carousel">
+          <article class="slide bear active" aria-label="Slide 1 of 3">
+            <div class="caption"><span>01 / 03</span><h3>On the ice</h3><p>A polar bear crosses a snowy landscape.</p></div>
+          </article>
+          <article class="slide ocean" aria-label="Slide 2 of 3" aria-hidden="true">
+            <div class="iceberg" aria-hidden="true"></div>
+            <div class="caption"><span>02 / 03</span><h3>Open water</h3><p>Ice and ocean meet at the edge of the Arctic.</p></div>
+          </article>
+          <article class="slide sky" aria-label="Slide 3 of 3" aria-hidden="true">
+            <div class="sun" aria-hidden="true"></div>
+            <div class="caption"><span>03 / 03</span><h3>Quiet light</h3><p>The horizon changes color through the year.</p></div>
+          </article>
+          <button class="arrow prev" type="button" aria-label="Previous slide">‹</button>
+          <button class="arrow next" type="button" aria-label="Next slide">›</button>
+        </div>
+        <p class="slide-count" aria-live="polite">Slide 1 of 3</p>
+      </div>
+    </section>
+
+    <section id="landscape" class="stripe landscape">
+      <div class="wrap">
+        <p class="label">03 / Landscape</p>
+        <h2>Room to pause</h2>
+        <p>Take a closer look at the wide, snowy landscape.</p>
+      </div>
+    </section>
+
+    <section id="watch" class="stripe watch">
+      <div class="wrap watch-inner">
+        <div>
+          <p class="label">04 / Watch</p>
+          <h2>A moment outdoors</h2>
+          <p>This short nature clip demonstrates the HTML5 video player. Use the controls to play or pause it.</p>
+          <small>Video: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">MDN Web Docs example media</a>.</small>
+        </div>
+        <video controls preload="metadata" playsinline aria-label="Short flower video">
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="stripe footer">
+    <div class="wrap footer-inner">
+      <div>
+        <h2>Arctic Notes</h2>
+        <p>A simple page about the far north.</p>
+        <small>Polar bear image supplied with the course template.</small>
+      </div>
+      <div>
+        <p>Find us elsewhere</p>
+        <div class="social">
+          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></a>
+          <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h3l13 16h-3L4 4Zm16 0L4 20"/></svg></a>
+        </div>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-text">
+      <button class="close" type="button" aria-label="Close dialog">×</button>
+      <p class="label">Arctic Notes</p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+</body>
 </html>
